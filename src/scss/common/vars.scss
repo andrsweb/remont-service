@@ -36,13 +36,19 @@ $fw-medium	: 500;
 $fw-semibold: 600;
 $fw-bold	: 700;
 
-// Line heights.
-$lh			: 1.5;
-$lh-title	: 1.3;
-
 // Colors.
-$white	: #FFFFFF;
-$black	: #000000;
+$white	 : #FFFFFF;
+$accent  : #0075a8;
+$span    : #007bff;
+$main    : #323232;
+$orange  : #ffc107;
+
+
+//backgrounds
+$bg-grey     : #eaeff3;
+$bg-dif      : linear-gradient(-56deg,#0a95e5 0,#023957 100%);
+$bg-warranty : linear-gradient(-56deg,rgba(61,21,85,.7) 40%,rgba(129,27,106,.7) 70%);
 
 // Others.
 $tr: 0.35s;
+$op: 0.75;
