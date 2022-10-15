@@ -4,66 +4,45 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-	font-family: $ff-title;
 	font-weight: $fw-bold;
-	line-height: $lh-title;
-	margin: 0 0 1rem
 }
 
 h1, .h1 {
-	font-size: 32px;
+	font-size: 3rem;
+	line-height: 3,375rem;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
 	}
 }
 
 h2, .h2 {
-	font-size: 24px;
+	font-size: 1.5625rem;
+	line-height: $lh-title;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
 	}
 }
 
 h3, .h3 {
-	font-size: 30px
-}
-
-h4, .h4 {
-	font-size: $fs-xl;
-
-	@media all and (min-width: $lg) {
-		font-size: 24px
-	}
-}
-
-h5, .h5 {
-	font-size: $fs-xl
-}
-
-h6, .h6 {
-	font-size: $fs-lg
+	font-size: 1.125rem;
+	line-height: $lh-headings;
 }
 
 a {
 	display: inline-block;
-	text-decoration: underline;
+	text-decoration: none;
 	transition: color ease-out $tr;
 
 	&:hover {
-		text-decoration: none
+		opacity: $op;
 	}
 }
 
 p {
+	font-size: 1rem;
 	margin-top: 0;
 
 	&:last-of-type {
 		margin-bottom: 0
 	}
-}
-
-b, strong {
-	font-weight: $fw-bold
 }

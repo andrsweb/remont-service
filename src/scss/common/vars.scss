@@ -15,15 +15,19 @@ $container-xl: 1200px;
 $container-padding: 24px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff-light	: 'HNC-Light', sans-serif;
+$ff-Medium	: 'HNC-Medium', sans-serif;
+$ff-black	: 'HNC-Black', sans-serif;
+$ff-bold	: 'HNC-Bold', sans-serif;
+$ff-italic	: 'HNC-Italic', sans-serif;
+$ff-roman	: 'HNC-Roman', sans-serif;
 
 // Font sizes.
-$fs-xs	: 12px;
-$fs-sm	: 14px;
-$fs-md	: 16px;
-$fs-lg	: 18px;
-$fs-xl	: 20px;
+$fs-xs	: 0,6875rem;
+$fs-sm	: 0,875rem;
+$fs-md	: 1rem;
+$fs-lg	: 2.25rem;
+$fs-xl	: 3rem;
 
 // Font weights.
 $fw-light	: 300;
@@ -32,13 +36,25 @@ $fw-medium	: 500;
 $fw-semibold: 600;
 $fw-bold	: 700;
 
-// Line heights.
-$lh			: 1.5;
-$lh-title	: 1.3;
+//line heights
+
+$lh          : 1,4375rem;
+$lh-title    : 2,1875rem;
+$lh-headings : 1,6875rem;
 
 // Colors.
-$white	: #FFFFFF;
-$black	: #000000;
+$white	 : #FFFFFF;
+$accent  : #0075a8;
+$span    : #007bff;
+$main    : #323232;
+$orange  : #ffc107;
+
+
+//backgrounds
+$bg-grey     : #eaeff3;
+$bg-dif      : linear-gradient(-56deg,#0a95e5 0,#023957 100%);
+$bg-warranty : linear-gradient(-56deg,rgba(61,21,85,.7) 40%,rgba(129,27,106,.7) 70%);
 
 // Others.
 $tr: 0.35s;
+$op: 0.75;
