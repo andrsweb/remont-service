@@ -14,6 +14,7 @@ body {
 	min-width: 300px;
 	display: flex;
 	height: auto;
+	font-family: $ff-Medium;
 	font-size: $fs-md;
 	color: $main;
 	background-color: $white;
@@ -29,6 +30,10 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none
+}
+
+p {
+	margin: 0;
 }
 
 .wrapper {

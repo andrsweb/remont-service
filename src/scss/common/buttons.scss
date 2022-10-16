@@ -1,0 +1,69 @@
+.button {
+	display: inline-block;
+	width: 100%;
+	max-width: 179px;
+	font-family: $ff-Medium;
+	padding: 8px 30px;
+	border-style: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: .875rem;
+	line-height: 1.4;
+	background: $orange;
+	transition: ease $tr;
+	border: 1px solid transparent;
+	cursor: pointer;
+	white-space: nowrap;
+
+	&:hover {
+		background: $white;
+		color: $main;
+		border: 1px solid $orange;
+	}
+
+	&.form-button {
+		background: #28a745;
+		border: 1px solid transparent;
+
+		&:hover {
+			background: $white;
+			color: $main;
+			border: 1px solid #28a745;
+		}
+	}
+}
+
+// form close-button
+.close-button {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+
+	&:hover span, &:hover span::after {
+		background: $main;
+	}
+
+	span{
+		position: absolute;
+		top: 0;
+		right: 6px;
+		width: 3px;
+		height: 100%;
+		background: #7a7a7a;
+		transform: rotate( 45deg );
+		transition: ease $tr;
+
+		&::after {
+			display: block;
+			content: "";
+			width: 3px;
+			height: 100%;
+			background: #7a7a7a;
+			transform: rotate( 90deg );
+			transition: ease $tr;
+		}
+	}
+}
