@@ -1,0 +1,55 @@
+.warranty-card {
+	padding: 30px 0;
+
+	.container {
+		max-width: 1140px;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		background: $bg-warranty;
+		border-radius: 4px;
+		padding: 40px;
+	}
+
+	&-inner {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	h2 {
+		font-family: $ff-black;
+		font-weight: $fw-bold;
+		font-size: $fs-xl;
+		color: $white;
+		line-height: $lh;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	&-subtitle {
+		font-family: $ff-roman;
+		font-weight: $fw-bold;
+		font-size: $fs-lg;
+		color: $white;
+		line-height: $lh-title;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	&-text {
+		font-family: $ff-roman;
+		font-weight: $fw-bold;
+		font-size: $fs-md;
+		color: $white;
+		line-height: $lh-title;
+		text-align: left;
+		padding: 20px;
+	}
+
+	&-image {
+		width: 40%;
+	}
+}
