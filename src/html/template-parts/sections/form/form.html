@@ -7,9 +7,9 @@
             <span></span>
         </div>
         <fieldset>
-            <input name="person-name" type="text" placeholder="Имя">
-            <input name="person-phone" type="tel" autocomplete="off"  placeholder="Номер телефона" pattern="2-[0-9]{3}-[0-9]{3}">
-            <textarea placeholder="Сообщение"></textarea>
+            <input name="person-name" type="text" placeholder="Имя" required>
+            <input name="person-phone" type="tel" autocomplete="off"  placeholder="Номер телефона" required>
+            <textarea placeholder="Сообщение" required></textarea>
             <div class="checkbox-wrapper">
                 <input class="checkbox" type="checkbox" required="">
                 <label for="yes">
@@ -19,10 +19,9 @@
                     </a>
                 </label>
             </div>
-            <button class="button form-button">
+            <button class="button form-button" type="submit">
                 Отправить заявку
             </button>
 		</fieldset>
-        
 	</form>
 </div>
