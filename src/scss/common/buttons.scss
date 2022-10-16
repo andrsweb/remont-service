@@ -19,4 +19,19 @@
 		color: $main;
 		border: 1px solid $orange;
 	}
+
+	&.form-button {
+		background: #28a745;
+		border: 1px solid transparent;
+
+		&:hover {
+			background: $white;
+			color: $main;
+			border: 1px solid #28a745;
+		}
+	}
+}
+
+.close-button {
+	
 }

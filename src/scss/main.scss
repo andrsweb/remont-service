@@ -4,7 +4,10 @@
 @import 'common/typography';
 @import 'common/grid';
 @import 'common/base';
-@import 'common/buttons.scss';
+@import 'common/buttons';
+
+// Form
+@import 'sections/form/form';
 
 // Header styles.
 @import 'header/header';
