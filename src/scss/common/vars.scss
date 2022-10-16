@@ -24,11 +24,11 @@ $ff-italic	: 'HNC-Italic', sans-serif;
 $ff-roman	: 'HNC-Roman', sans-serif;
 
 // Font sizes.
-$fs-xs	: 0,6875rem;
-$fs-sm	: 0,875rem;
-$fs-md	: 1rem;
-$fs-lg	: 2.25rem;
-$fs-xl	: 3rem;
+$fs-xs	: 11px;
+$fs-sm	: 14px;
+$fs-md	: 16px;
+$fs-lg	: 36px;
+$fs-xl	: 48px;
 
 // Font weights.
 $fw-light	: 300;
@@ -39,9 +39,9 @@ $fw-bold	: 700;
 
 //line heights
 
-$lh          : 1,4375rem;
-$lh-title    : 2,1875rem;
-$lh-headings : 1,6875rem;
+$lh          : 1;
+$lh-title    : 1.2;
+$lh-headings : 2;
 
 // Colors.
 $white	 : #FFFFFF;

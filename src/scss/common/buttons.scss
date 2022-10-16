@@ -1,5 +1,7 @@
 .button {
 	display: inline-block;
+	width: 100%;
+	max-width: 179px;
 	font-family: $ff-Medium;
 	padding: 8px 30px;
 	border-style: none;

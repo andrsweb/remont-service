@@ -10,15 +10,27 @@ h6, .h6 {
 }
 
 h1, .h1 {
-	font-size: 3rem;
-	line-height: 3,375rem;
+	font-family: $ff-roman;
+	font-weight: $fw-semibold;
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 12px;
+
+	@media all and (min-width: $xl) {
+		font-size: 48px;
+		line-height: $lh-title;
+	}
+
+	span {
+		color: $span;
+	}
 
 	@media all and (min-width: $lg) {
 	}
 }
 
 h2, .h2 {
-	font-size: 1.5625rem;
+	font-size: 25px;
 	line-height: $lh-title;
 
 	@media all and (min-width: $lg) {
@@ -26,7 +38,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 1.125rem;
+	font-size: 18px;
 	line-height: $lh-headings;
 }
 
@@ -41,11 +53,7 @@ a {
 }
 
 p {
-	font-size: 1rem;
+	font-size: 16px;
 	margin-top: 0;
 	padding: 0;
-
-	&:last-of-type {
-		margin-bottom: 0
-	}
 }
