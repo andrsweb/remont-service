@@ -1,0 +1,85 @@
+.header {
+	background: $accent;
+
+	&::after {
+		content: "";
+		display: block;
+		background: #00639b;
+		width: 100%;
+		height: 10px;
+	}
+
+	.container {
+		max-width: 1140px;
+	}
+
+	&-wrapper {
+		padding: 7px 0;
+	}
+
+	&-inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&-logo {
+		display: flex;
+		align-items: center;
+		transition: ease $tr;
+
+		img {
+			width: 35px;
+		}
+	}
+
+	&-logo-text {
+		font-family: $ff-roman;
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+		font-size: .6875rem;
+		line-height: 1.2;
+		max-width: 120px;
+		margin-left: 10px;
+		color: $white;
+	}
+
+	&-menu {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&-menu-item {
+		font-family: $ff-roman;
+		font-weight: $fw-regular;
+		text-transform: uppercase;
+		font-size: .8125rem;
+		line-height: 1.5;
+		margin-right: 3.75rem;
+		color: $white;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&-phone {
+		display: flex;
+	}
+
+	&-phone-number {
+		display: flex;
+		align-items: center;
+		font-family: $ff-roman;
+		font-weight: $fw-regular;
+		text-transform: uppercase;
+		font-size: 1.25rem;
+		line-height: 1.2;
+		color: $white;
+
+		img {
+			margin-right: 20px;
+		}
+	}
+}
