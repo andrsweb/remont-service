@@ -1,0 +1,20 @@
+.button {
+	display: inline-block;
+	font-family: $ff-Medium;
+	padding: 8px 30px;
+	border-style: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: .875rem;
+	line-height: 1.4;
+	background: $orange;
+	transition: ease $tr;
+	border: 1px solid transparent;
+	cursor: pointer;
+
+	&:hover {
+		background: $white;
+		color: $main;
+		border: 1px solid $orange;
+	}
+}
