@@ -22,11 +22,11 @@ const formOnClick = () => {
 		} )
 	} )
 
-	closeButton.addEventListener( 'click', () => {
+	closeButton.addEventListener( 'click', () => { //close form by click cross
 		formWrapper.classList.remove( 'opened' )
 	} )
 
-	formWrapper.addEventListener( 'click', e => {
+	formWrapper.addEventListener( 'click', e => {  //close for for touch anywhere
         e.stopPropagation()
 
         const target = e.target
