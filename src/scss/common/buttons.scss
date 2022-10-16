@@ -7,7 +7,7 @@
 	border-style: none;
 	border-radius: 5px;
 	color: #fff;
-	font-size: .875rem;
+	font-size: $fs-sm;
 	line-height: 1.4;
 	background: $orange;
 	transition: ease $tr;
@@ -30,6 +30,10 @@
 			color: $main;
 			border: 1px solid #28a745;
 		}
+	}
+
+	&.cards-button {
+		max-width: 150px;
 	}
 }
 
