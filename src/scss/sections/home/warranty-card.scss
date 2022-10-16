@@ -7,49 +7,88 @@
 
 	&-wrapper {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		background: $bg-warranty;
 		border-radius: 4px;
-		padding: 40px;
+		padding: 10px;
+
+		@media all and (min-width: $lg) {
+			padding: 25px;
+		}
+
+		@media all and (min-width: $xl) {
+			padding: 40px;
+		}
 	}
 
 	&-inner {
-		width: 60%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
 	}
 
 	h2 {
 		font-family: $ff-black;
 		font-weight: $fw-bold;
-		font-size: $fs-xl;
+		font-size: 28px;
 		color: $white;
 		line-height: $lh;
 		text-align: center;
 		margin-bottom: 10px;
+
+		@media all and (min-width: $m) {
+			font-size: $fs-lg;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 40px;
+		}
 	}
 
 	&-subtitle {
 		font-family: $ff-roman;
 		font-weight: $fw-bold;
-		font-size: $fs-lg;
+		font-size: 20px;
 		color: $white;
 		line-height: $lh-title;
 		text-align: center;
 		margin-bottom: 20px;
+
+		@media all and (min-width: $m) {
+			font-size: 25px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 30px;
+		}
 	}
 
 	&-text {
 		font-family: $ff-roman;
 		font-weight: $fw-bold;
-		font-size: $fs-md;
+		font-size: $fs-sm;
 		color: $white;
 		line-height: $lh-title;
 		text-align: left;
 		padding: 20px;
+
+		@media all and (min-width: $m) {
+			font-size: $fs-md;
+		}
 	}
 
 	&-image {
-		width: 40%;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
 	}
 }
