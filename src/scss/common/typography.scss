@@ -32,6 +32,8 @@ h1, .h1 {
 h2, .h2 {
 	font-size: 25px;
 	line-height: $lh-title;
+	text-align: center;
+	margin-bottom: 30px;
 
 	@media all and (min-width: $lg) {
 	}
