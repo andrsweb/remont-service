@@ -12,21 +12,49 @@
     }
 
     .card-item {
-        width: calc( 100% / 6 );
-        display: none;
+        width: calc( 100% / 2 );
+        display: flex;
+        height: 0;
         flex-direction: column;
         padding: 0 20px;
         overflow: hidden;
         cursor: pointer;
+        transition: height ease 2s,
+                    opacity ease $tr;
+
+        @media all and (min-width: $m) {
+            width: calc( 100% / 3 );
+        }
+
+        @media all and (min-width: $lg) {
+            width: calc( 100% / 6 );
+        }
+
+        &:hover {
+            .card-item-image {
+                border: 3px solid $bg-grey;
+            }
+
+            .card-item-text {
+                color: $orange;
+            }
+        }
 
         &.visible {
-            display: flex;
+            height: auto;
+            margin-bottom: 40px;
         }
     }
 
     .card-item-image {
+        min-height: 220px;
+        width: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
+        border: 1px solid $bg-grey;
+        transition: border ease $tr;
+
         img {
             width: 100px;
             min-height: 140px;
@@ -34,18 +62,19 @@
     }
 
     .card-item-inner {
-        min-height: 220px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid $bg-grey;
     }
 
     .card-item-text {
         text-align: center;
+        margin-top: 20px;
+        transition: color ease $tr;
     }
 
     .button.cards-button {
-        margin: 50px auto 0 auto;
+        margin: 0 auto;
     }
 }
