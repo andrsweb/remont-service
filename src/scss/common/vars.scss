@@ -16,12 +16,9 @@ $container-xl: 1200px;
 $container-padding: 24px;
 
 // Font families.
-$ff-light	: 'HNC-Light', sans-serif;
-$ff-Medium	: 'HNC-Medium', sans-serif;
-$ff-black	: 'HNC-Black', sans-serif;
-$ff-bold	: 'HNC-Bold', sans-serif;
-$ff-italic	: 'HNC-Italic', sans-serif;
-$ff-roman	: 'HNC-Roman', sans-serif;
+$ff-gora	: 'Gora Free', sans-serif;
+$ff-col	    : 'Colus', sans-serif;
+$ff-pom 	: 'Pomidorko', sans-serif;
 
 // Font sizes.
 $fs-xs	: 11px;
@@ -31,11 +28,10 @@ $fs-lg	: 36px;
 $fs-xl	: 48px;
 
 // Font weights.
-$fw-light	: 300;
 $fw-regular	: 400;
 $fw-medium	: 500;
-$fw-semibold: 600;
-$fw-bold	: 700;
+$fw-semibold: 700;
+$fw-bold	: 900;
 
 //line heights
 

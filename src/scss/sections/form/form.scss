@@ -35,7 +35,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: flex-start;
-		font-family: $ff-roman;
+		font-family: $ff-col;
 		font-weight: $fw-bold;
 		font-size: $fs-md;
 		line-height: $lh;
@@ -46,7 +46,7 @@
 	}
 
 	fieldset {
-		font-family: $ff-roman;
+		font-family: $ff-col;
 		font-size: $fs-md;
 		display: flex;
 		flex-direction: column;
@@ -54,7 +54,7 @@
 	}
 
 	input {
-		font-family: $ff-roman;
+		font-family: $ff-col;
 		font-size: $fs-md;
 		height: 38px;
 		width: 100%;
@@ -79,7 +79,7 @@
 	}
 
 	textarea {
-		font-family: $ff-roman;
+		font-family: $ff-col;
 		font-size: $fs-md;
 		min-height: 100px;
 		resize: none;
