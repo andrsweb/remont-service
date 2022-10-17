@@ -23,10 +23,36 @@
 	}
 
 	&-inner {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: $light;
+		width: 50%;
+		height: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
+		opacity: 0;
+		box-shadow: 5px 5px 10px 1px $accent;
+		transform: translateX( -2000px );
+
+		@media all and (min-width: $md) {
+			position: static;
+			transform: translateX( 0 );
+			height: auto;
+			opacity: 1;
+			width: 100%;
+			box-shadow: none;
+			background: none;
+			color: $white;
+		}
+
+		&.opened {
+			opacity: 1;
+			transition: opacity ease 1s;
+			transform: translateX( 0 );
+		}
 	}
 
 	&-logo {
@@ -36,17 +62,13 @@
 		align-items: center;
 		transition: opacity ease $tr;
 
-		&:hover {
-			opacity: 0.5;
-		}
-
-		@media all and (min-width: $m) {
-			width: 50%;
-		}
-
 		@media all and (min-width: $md) {
 			width: 5%;
 			justify-content: flex-start;
+		}
+
+		&:hover {
+			opacity: 0.5;
 		}
 
 		img {
@@ -54,50 +76,48 @@
 		}
 	}
 
-	&-logo-text {
-		font-family: $ff-roman;
-		font-weight: $fw-bold;
-		text-transform: uppercase;
-		font-size: $fs-xs;
-		line-height: $lh;
-		max-width: 120px;
-		margin-left: 10px;
-		color: $white;
-	}
-
 	&-menu {
 		width: 100%;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		flex-wrap: wrap;
 		margin: 10px 0;
 
-		@media all and (min-width: $m) {
-			width: 50%;
-			margin: 0;
-		}
-
 		@media all and (min-width: $md) {
+			flex-direction: row;
 			width: 47.5%;
-			justify-content: center;
+			margin: 0;
 		}
 	}
 
 	&-menu-item {
+		display: flex;
+		justify-content: center;
 		font-family: $ff-roman;
 		font-weight: $fw-regular;
 		text-transform: uppercase;
 		font-size: $fs-sm;
 		line-height: 1.5;
-		margin-right: 20px;
-		color: $white;
+		margin-bottom: 40px;
+		color: $accent;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 0;
+			margin-right: 20px;
+			color: $light;
+		}
 
 		@media all and (min-width: $lg) {
 			margin-right: 60px;
 		}
 
 		&:last-child {
-			margin-right: 0;
+			margin-bottom: 0;
+
+			@media all and (min-width: $md) {
+				margin-right: 0;
+			}
 		}
 	}
 
@@ -106,12 +126,7 @@
 		display: flex;
 		justify-content: center;
 
-		@media all and (min-width: $m) {
-			margin-top: 10px;
-		}
-
 		@media all and (min-width: $md) {
-			margin-top: 0;
 			width: 47.5%;
 			justify-content: flex-end;
 		}
@@ -119,16 +134,29 @@
 
 	&-phone-number {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		font-family: $ff-roman;
 		font-weight: $fw-regular;
 		text-transform: uppercase;
-		font-size: 20px;
+		font-size: 15px;
 		line-height: 1.2;
-		color: $white;
+		color: $accent;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			color: $light;
+			flex-direction: row;
+			font-size: 20px;
+		}
 
 		img {
-			margin-right: 20px;
+			margin-bottom: 20px;
+
+			@media all and (min-width: $md) {
+				margin: 0 20px 0 0;
+				font-size: 20px;
+			}
 		}
 	}
 }

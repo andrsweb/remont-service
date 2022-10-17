@@ -20,7 +20,7 @@
         padding: 0 20px;
         overflow: hidden;
         cursor: pointer;
-        transition: height ease 2s,
+        transition: height ease 1s,
                     opacity ease $tr;
 
         @media all and (min-width: $m) {
