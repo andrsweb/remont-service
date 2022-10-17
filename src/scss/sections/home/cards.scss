@@ -71,9 +71,14 @@
     }
 
     .card-item-text {
+        font-size: 12px;
         text-align: center;
         margin-top: 20px;
         transition: color ease $tr;
+
+        @media all and (min-width: $md) {
+            font-size: 15px;
+        }
     }
 
     .button.cards-button {

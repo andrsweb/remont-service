@@ -28,7 +28,7 @@
 	}
 
 	h2 {
-		font-family: $ff-bold;
+		font-family: $ff-pom;
 		font-weight: $fw-bold;
 		font-size: 30px;
 		text-transform: uppercase;
@@ -48,9 +48,9 @@
 	}
 
 	&-desc {
-		font-family: $ff-light;
+		font-family: $ff-col;
 		font-weight: $fw-bold;
-		font-size: 18px;
+		font-size: 14px;
 		text-transform: uppercase;
 		text-align: left;
 		margin-bottom: 40px;
@@ -61,7 +61,7 @@
 		}
 
 		@media all and (min-width: $lg) {
-			font-size: 25px;
+			font-size: 18px;
 		}
 	}
 
@@ -77,6 +77,14 @@
 		@media all and (min-width: $md) {
 			width: calc( 50% - 10px);
 			margin-left: 10px;
+		}
+	}
+
+	.header-button {
+		margin: 0 auto;
+
+		@media all and (min-width: $md) {
+			margin: 0;
 		}
 	}
 }

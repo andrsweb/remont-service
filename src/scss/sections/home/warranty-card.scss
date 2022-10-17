@@ -34,7 +34,7 @@
 	}
 
 	h2 {
-		font-family: $ff-black;
+		font-family: $ff-col;
 		font-weight: $fw-bold;
 		font-size: 28px;
 		color: $white;
@@ -52,7 +52,7 @@
 	}
 
 	&-subtitle {
-		font-family: $ff-roman;
+		font-family: $ff-col;
 		font-weight: $fw-bold;
 		font-size: 20px;
 		color: $white;
@@ -70,7 +70,7 @@
 	}
 
 	&-text {
-		font-family: $ff-roman;
+		font-family: $ff-col;
 		font-weight: $fw-bold;
 		font-size: $fs-sm;
 		color: $white;

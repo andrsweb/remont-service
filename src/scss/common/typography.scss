@@ -10,11 +10,19 @@ h6, .h6 {
 }
 
 h1, .h1 {
-	font-family: $ff-roman;
-	font-weight: $fw-semibold;
-	font-size: 30px;
+	font-family: $ff-pom;
+	font-weight: $fw-bold;
+	font-size: 35px;
 	line-height: 1;
 	margin-bottom: 12px;
+
+	@media all and (min-width: $md) {
+		font-size: 40px;
+	}
+
+	@media all and (min-width: $lg) {
+		text-align: left;
+	}
 
 	@media all and (min-width: $xl) {
 		font-size: 48px;
@@ -27,12 +35,19 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 25px;
+	font-family: $ff-col;
+	font-weight: $fw-bold;
+	font-size: 15px;
 	line-height: $lh-title;
 	text-align: center;
 	margin-bottom: 30px;
 
+	@media all and (min-width: $m) {
+		font-size: 20px;
+	}
+
 	@media all and (min-width: $lg) {
+		font-size: 25px;
 	}
 }
 
