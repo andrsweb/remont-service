@@ -45,16 +45,18 @@ $lh-headings : 2;
 
 // Colors.
 $white	 : #FFFFFF;
-$accent  : #0075a8;
-$span    : #007bff;
+$accent  : #8D8D8B;
+$light   : #F6F6F4;
+$peach   : #F2EEE9;
+$span    : #ecbe25;
 $main    : #323232;
 $orange  : #ffc107;
 
 
 //backgrounds
 $bg-grey     : #eaeff3;
-$bg-dif      : linear-gradient(-56deg,#f0f5f8 0,#619ab9 100%);
-$bg-warranty : linear-gradient(-66deg,rgba(203, 213, 231, 0.87) 20%,rgba(27, 92, 212, 0.7) 70%);
+$bg-dif      : linear-gradient(-56deg,#8a8787 0,#cccaca 100%);
+$bg-warranty : linear-gradient(-66deg,rgba(218, 218, 221, 0.87) 20%,rgba(134, 136, 139, 0.7) 70%);
 
 // Others.
 $tr: 0.35s;
