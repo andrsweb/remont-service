@@ -1,0 +1,47 @@
+.contacts-info {
+    padding: 50px 0;
+    background: $peach;
+
+    .container {
+        max-width: 1140px;
+    }
+
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+
+    &-item {
+        width: calc( 100% / 1 );
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @media all and (min-width: $md) {
+            width: calc( 100% / 3);
+        }
+    }
+
+    &-text {
+        font-family: $ff-pom;
+        font-weight: $fw-bold;
+        font-size: 15px;
+        min-height: 100px;
+
+        @media all and (min-width: $md) {
+            font-size: 20px;
+        }
+    }
+
+    &-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
