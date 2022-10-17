@@ -1,13 +1,14 @@
 .button {
 	display: inline-block;
 	width: 100%;
-	max-width: 179px;
+	max-width: 190px;
 	font-family: $ff-col;
+	font-weight: 900;
 	padding: 8px 30px;
 	border-style: none;
 	border-radius: 5px;
 	color: #fff;
-	font-size: $fs-sm;
+	font-size: 12px;
 	line-height: 1.4;
 	background: $orange;
 	transition: ease $tr;

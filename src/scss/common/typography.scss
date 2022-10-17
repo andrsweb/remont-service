@@ -10,11 +10,19 @@ h6, .h6 {
 }
 
 h1, .h1 {
-	font-family: $ff-col;
-	// font-weight: $fw-bold;
-	font-size: 30px;
+	font-family: $ff-pom;
+	font-weight: $fw-bold;
+	font-size: 35px;
 	line-height: 1;
 	margin-bottom: 12px;
+
+	@media all and (min-width: $md) {
+		font-size: 40px;
+	}
+
+	@media all and (min-width: $lg) {
+		text-align: left;
+	}
 
 	@media all and (min-width: $xl) {
 		font-size: 48px;
@@ -27,6 +35,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
+	font-family: $ff-col;
 	font-size: 25px;
 	line-height: $lh-title;
 	text-align: center;
