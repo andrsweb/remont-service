@@ -1,4 +1,4 @@
-.about-us {
+.repair {
     padding: 50px 0 0;
     background: $peach;
 
@@ -33,32 +33,24 @@
 
     &-wrapper {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
+        align-items: center;
         padding-left: 20px;
     }
 
-    &-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    &-info {
         width: 100%;
-        margin-bottom: 30px;
 
         @media all and (min-width: $md) {
             width: 50%;
         }
     }
 
-    &-item {
-        position: relative;
-        display: flex;
-        flex-direction: column;
+    &-text {
         font-family: $ff-mont;
         font-weight: $fw-bold;
-        font-size: 15px;
-        color: $main;
-        margin-bottom: 30px;
+        font-size: 15px; //19
+        margin-bottom: 20px;
 
         @media all and (min-width: $lg) {
             font-size: 19px;
@@ -67,37 +59,25 @@
         &:last-child {
             margin-bottom: 0;
         }
-
-        &::before {
-            position: absolute;
-            top: 50%;
-            left: -35px;
-            display: block;
-            content: "";
-            width: 20px;
-            height: 20px;
-            background: $orange;
-            border-radius: 50%;
-
-            @media all and (min-width: $xxl) {
-                left: -59px;
-            }
-
-        }
     }
 
     &-image {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         width: 100%;
 
         @media all and (min-width: $md) {
             width: 50%;
+            justify-content: flex-end;
         }
-    }
 
-    .sales {
-        background: $peach;
+        img {
+            max-width: 300px;
+
+            @media all and (min-width: $lg) {
+                max-width: 400px;
+            }
+        }
     }
 }

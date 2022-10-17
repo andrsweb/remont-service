@@ -1,0 +1,53 @@
+.information {
+    padding: 50px 0;
+    background: $light;
+
+    .container {
+        max-width: 1140px;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+
+    &-item {
+        width: calc( 100% / 1);
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @media all and (min-width: $md) {
+            width: calc( 100% / 3 );
+        }
+    }
+
+    &-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &-text {
+        font-family: $ff-mont;
+        font-weight: $fw-bold;
+        line-height: $lh;
+        color: $main;
+        font-size: 15px;
+        min-height: 75px;
+
+        @media all and (min-width: $lg) {
+            font-size: 19px;
+        }
+    }
+
+    .sales {
+        background: $light;
+    }
+}
