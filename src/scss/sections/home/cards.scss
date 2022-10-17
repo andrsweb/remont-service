@@ -32,6 +32,7 @@
         }
 
         &:hover {
+            opacity: $op;
             .card-item-image {
                 border: 3px solid $bg-grey;
             }

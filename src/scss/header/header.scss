@@ -7,7 +7,7 @@
 	z-index: 100;
 	padding: 5px 0;
 	transition: padding $tr,
-				box-shadow ease $tr;
+		box-shadow ease $tr;
 
 	&.scrolled {
         box-shadow: 2px 2px 6px 4px #4e4d49;
@@ -34,7 +34,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: ease $tr;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: 0.5;
+		}
 
 		@media all and (min-width: $m) {
 			width: 50%;

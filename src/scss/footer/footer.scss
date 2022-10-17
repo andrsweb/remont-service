@@ -41,6 +41,10 @@
 
     .header-menu-item {
         color: $white;
+
+        &:hover {
+            color: $orange;
+        }
     }
 
     &-text {
