@@ -7,11 +7,11 @@
     }
 
     .breadcrumbs {
-        cursor: pointer;
         margin-bottom: 40px;
     }
 
     .main-breadcrumb, .current-breadcrumb, .slash{
+        cursor: pointer;
         font-family: $ff-col;
         font-size: 14px;
         font-weight: $fw-regular;
@@ -29,6 +29,10 @@
 
     .main-breadcrumb {
         text-decoration: underline;
+    }
+
+    .slash {
+        cursor: default;
     }
 
     &-wrapper {
