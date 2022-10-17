@@ -8,7 +8,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 const formOnClick = () => {
 	const formWrapper = document.querySelector( '.form-wrapper' )
-	const formButton  = document.querySelectorAll( '.hero-button' )
+	const formButton  = document.querySelectorAll( '.header-button' )
 	const closeButton = document.querySelector( '.close-button' )
 	const targetElement  = document.querySelector( '#body-lock' )
 
@@ -36,7 +36,9 @@ const formOnClick = () => {
 
         const target = e.target
 
-        if ( target.className && target.classList.contains( 'form-wrapper' ) )
-            formWrapper.classList.remove( 'opened' )
+        if ( target.className && target.classList.contains( 'form-wrapper' ) ) {
+			formWrapper.classList.remove( 'opened' )
+			enableBodyScroll( targetElement )
+		}
     } )
 }

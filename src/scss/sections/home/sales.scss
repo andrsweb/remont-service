@@ -50,7 +50,7 @@
 	&-desc {
 		font-family: $ff-col;
 		font-weight: $fw-bold;
-		font-size: 18px;
+		font-size: 14px;
 		text-transform: uppercase;
 		text-align: left;
 		margin-bottom: 40px;
@@ -77,6 +77,14 @@
 		@media all and (min-width: $md) {
 			width: calc( 50% - 10px);
 			margin-left: 10px;
+		}
+	}
+
+	.header-button {
+		margin: 0 auto;
+
+		@media all and (min-width: $md) {
+			margin: 0;
 		}
 	}
 }

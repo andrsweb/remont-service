@@ -76,6 +76,7 @@
 	}
 
 	.header-phone {
+		display: flex;
 		flex-direction: row;
 		@media all and (min-width: $m) {
 			justify-content: flex-end;
@@ -106,7 +107,7 @@
 	}
 
 	&-text {
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-weight: $fw-bold;
 		line-height: $lh;
 		font-size: $fs-md;
@@ -116,11 +117,15 @@
 	}
 
 	&-law {
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-weight: $fw-medium;
 		line-height: $lh;
 		font-size: $fs-sm;
 		color: $white;
 		text-align: center;
+	}
+
+	.header-button {
+		display: none;
 	}
 }

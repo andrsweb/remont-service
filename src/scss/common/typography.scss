@@ -36,12 +36,18 @@ h1, .h1 {
 
 h2, .h2 {
 	font-family: $ff-col;
-	font-size: 25px;
+	font-weight: $fw-bold;
+	font-size: 15px;
 	line-height: $lh-title;
 	text-align: center;
 	margin-bottom: 30px;
 
+	@media all and (min-width: $m) {
+		font-size: 20px;
+	}
+
 	@media all and (min-width: $lg) {
+		font-size: 25px;
 	}
 }
 

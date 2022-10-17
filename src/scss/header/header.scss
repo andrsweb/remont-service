@@ -123,7 +123,7 @@
 
 	&-phone {
 		width: 100%;
-		display: flex;
+		display: none;
 		justify-content: center;
 
 		@media all and (min-width: $md) {
@@ -157,6 +157,17 @@
 				margin: 0 20px 0 0;
 				font-size: 20px;
 			}
+		}
+	}
+
+	.header-button-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		@media all and (min-width: $md) {
+			width: 47.5%;
+			justify-content: flex-end;
 		}
 	}
 }
