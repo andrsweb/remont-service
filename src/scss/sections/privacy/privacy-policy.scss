@@ -1,0 +1,44 @@
+.privacy {
+    padding: 50px 0;
+
+    .container {
+        max-width: 1140px;
+    }
+
+    .breadcrumbs {
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+
+    .main-breadcrumb, .current-breadcrumb, .slash{
+        font-family: $ff-col;
+        font-size: 14px;
+        font-weight: $fw-regular;
+        color: $main;
+        transition: color ease $tr,
+            text-decoration ease $tr;
+    }
+
+    .current-breadcrumb, .main-breadcrumb {
+        &:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+
+    .main-breadcrumb {
+        text-decoration: underline;
+    }
+
+    &-text {
+        font-family: $ff-mont;
+        font-weight: $fw-bold;
+        font-size: 10px;
+        color: black;
+        cursor: default;
+
+        @media all and (min-width: $md) {
+            font-size: 15px;
+        }
+    }
+}
