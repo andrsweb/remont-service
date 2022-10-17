@@ -1,0 +1,103 @@
+.about-us {
+    padding: 50px 0 0;
+    background: $peach;
+
+    .container {
+        max-width: 1140px;
+    }
+
+    .breadcrumbs {
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+
+    .main-breadcrumb, .current-breadcrumb, .slash{
+        font-family: $ff-col;
+        font-size: 14px;
+        font-weight: $fw-regular;
+        color: $main;
+        transition: color ease $tr,
+            text-decoration ease $tr;
+    }
+
+    .current-breadcrumb, .main-breadcrumb {
+        &:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+
+    .main-breadcrumb {
+        text-decoration: underline;
+    }
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+
+        @media all and (min-width: $md) {
+            width: 50%;
+        }
+    }
+
+    &-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-family: $ff-mont;
+        font-weight: $fw-bold;
+        font-size: 15px;
+        color: $main;
+        margin-bottom: 30px;
+
+        @media all and (min-width: $lg) {
+            font-size: 19px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: -35px; //-59
+            display: block;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: $orange;
+            border-radius: 50%;
+
+            @media all and (min-width: $xxl) {
+                left: -59px;
+            }
+
+        }
+    }
+
+    &-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        @media all and (min-width: $md) {
+            width: 50%;
+        }
+    }
+
+    .sales {
+        background: $peach;
+    }
+}
