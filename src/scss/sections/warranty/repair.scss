@@ -1,0 +1,65 @@
+.repair {
+    padding: 50px 0 0;
+    background: $peach;
+
+    .container {
+        max-width: 1140px;
+    }
+
+    .breadcrumbs {
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+
+    .main-breadcrumb, .current-breadcrumb, .slash{
+        font-family: $ff-col;
+        font-size: 14px;
+        font-weight: $fw-regular;
+        color: $main;
+        transition: color ease $tr,
+            text-decoration ease $tr;
+    }
+
+    .current-breadcrumb, .main-breadcrumb {
+        &:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+
+    .main-breadcrumb {
+        text-decoration: underline;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &-info {
+        width: 50%;
+    }
+
+    &-text {
+        font-family: $ff-mont;
+        font-weight: $fw-bold;
+        font-size: 19px;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &-image {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+
+        img {
+            max-width: 400px;
+        }
+    }
+}
