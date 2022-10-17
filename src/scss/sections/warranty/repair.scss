@@ -35,17 +35,26 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        padding-left: 20px;
     }
 
     &-info {
-        width: 50%;
+        width: 100%;
+
+        @media all and (min-width: $md) {
+            width: 50%;
+        }
     }
 
     &-text {
         font-family: $ff-mont;
         font-weight: $fw-bold;
-        font-size: 19px;
+        font-size: 15px; //19
         margin-bottom: 20px;
+
+        @media all and (min-width: $lg) {
+            font-size: 19px;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -55,11 +64,20 @@
     &-image {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        width: 50%;
+        justify-content: center;
+        width: 100%;
+
+        @media all and (min-width: $md) {
+            width: 50%;
+            justify-content: flex-end;
+        }
 
         img {
-            max-width: 400px;
+            max-width: 300px;
+
+            @media all and (min-width: $lg) {
+                max-width: 400px;
+            }
         }
     }
 }
