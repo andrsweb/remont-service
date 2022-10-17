@@ -1,5 +1,6 @@
 .cards {
     padding: 30px 0;
+    background: $light;
 
     .container {
         max-width: 1140px;
@@ -19,7 +20,7 @@
         padding: 0 20px;
         overflow: hidden;
         cursor: pointer;
-        transition: height ease 2s,
+        transition: height ease 1s,
                     opacity ease $tr;
 
         @media all and (min-width: $m) {
@@ -31,6 +32,7 @@
         }
 
         &:hover {
+            opacity: $op;
             .card-item-image {
                 border: 3px solid $bg-grey;
             }

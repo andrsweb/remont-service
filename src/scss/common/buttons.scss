@@ -71,3 +71,67 @@
 		}
 	}
 }
+
+.burger-button {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin-left: auto;
+	cursor: pointer;
+	z-index: 100;
+
+	@media all and (min-width: $md) {
+		display: none;
+	}
+
+	span {
+		position: absolute;
+		top: 11px;
+		right: 0;
+		display: block;
+		background: $light;
+		width: 100%;
+		height: 3px;
+		border-radius: 5px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 7px;
+			right: 0;
+			background: $light;
+			width: 70%;
+			height: 3px;
+			border-radius: 5px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 14px;
+			right: 0;
+			background: $light;
+			width: 100%;
+			height: 3px;
+			border-radius: 5px;
+		}
+	}
+
+	&.opened {
+		span {
+			transform: rotate( 45deg );
+			top: 20px;
+			transition: transform ease $tr;
+		}
+
+		& span::before {
+			opacity: 0;
+		}
+
+		& span::after {
+			width: 100%;
+			transform: rotate( -90deg );
+			top: 0;
+		}
+	}
+}

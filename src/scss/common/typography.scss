@@ -44,10 +44,10 @@ h3, .h3 {
 a {
 	display: inline-block;
 	text-decoration: none;
-	transition: opacity ease $tr;
+	transition: color ease $tr;
 
 	&:hover {
-		opacity: $op;
+		color: $orange;
 	}
 }
 

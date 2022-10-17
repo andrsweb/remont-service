@@ -116,7 +116,12 @@
 
 	label {
 		a {
-			color: $span;
+			color: blue;
+			transition: ease $tr;
+
+			&:hover {
+				opacity: $op;
+			}
 		}
 	}
 }

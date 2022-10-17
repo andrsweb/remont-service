@@ -4,4 +4,5 @@ import './common/common'
 import './form/form'
 
 //sections
+import './home/header'
 import './home/cards'

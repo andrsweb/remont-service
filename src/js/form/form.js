@@ -16,14 +16,19 @@ const formOnClick = () => {
 
 	formButton.forEach( button => {
 		button.addEventListener( 'click', () => {
-			if ( ! formWrapper.classList.contains( 'openned' ) )
+			if ( ! formWrapper.classList.contains( 'openned' ) ) {
+				disableBodyScroll( targetElement )
 				formWrapper.classList.add( 'opened' )
-			else formWrapper.classList.remove( 'opened' )
+			} else {
+				formWrapper.classList.remove( 'opened' )
+				enableBodyScroll( targetElement )
+			}
 		} )
 	} )
 
 	closeButton.addEventListener( 'click', () => { //close form by click cross
 		formWrapper.classList.remove( 'opened' )
+		enableBodyScroll( targetElement )
 	} )
 
 	formWrapper.addEventListener( 'click', e => {  //close for for touch anywhere
@@ -34,7 +39,4 @@ const formOnClick = () => {
         if ( target.className && target.classList.contains( 'form-wrapper' ) )
             formWrapper.classList.remove( 'opened' )
     } )
-
-	if ( formWrapper.classList.contains( 'opened') ) disableBodyScroll( targetElement )
-	else enableBodyScroll( targetElement )
 }
