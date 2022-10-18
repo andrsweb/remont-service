@@ -39,10 +39,21 @@ function as_check_name( string $name ): bool
 	return preg_match('/^[a-zа-я\s]+$/iu', $name );
 }
 
+/**
+ * Function checks phone symbols.
+ *
+ * @param   string  $phone  Some phone number.
+ * @return  bool            True if OK, false if string has bad symbols.
+ */
+function as_check_phone( string $phone ): bool
+{
+	return preg_match('/^[0-9()+\-\s]+$/iu', $phone );
+}
+
 $person_name		= isset( $_POST['person-name'] ) ? as_clean_value( $_POST['person-name'] ) : null;
 $person_phone		= isset( $_POST['person-phone'] ) ? as_clean_value( $_POST['person-phone'] ) : null;
-$person_text		= isset( $_POST['person-text'] ) ? as_clean_value( $_POST['person-text'] ) : null;
-$person_check		= isset( $_POST['person-check'] ) ? as_clean_value( $_POST['person-check'] ) : null;
+$person_text		= isset( $_POST['textarea'] ) ? as_clean_value( $_POST['textarea'] ) : null;
+$person_check		= isset( $_POST['checkbox'] ) ? as_clean_value( $_POST['checkbox'] ) : null;
 
 // All fields are required.
 if( ! $person_name || ! $person_phone || ! $person_text || ! $person_check ){
@@ -62,8 +73,14 @@ if( ! as_check_length( $person_name, 1, 50 ) ){
 	die();
 }
 
-if( ! as_check_length( $person_phone, 1, 30 ) ){
-	echo 'Телефон не должен превышать 30 символов.';
+if( ! as_check_length( $person_phone, 3, 30 ) ){
+	echo 'Телефон не должен превышать 30 символов или быть меньше 3 символов.';
+	die();
+}
+
+// Check phone symbols.
+if( ! as_check_phone( $person_phone ) ){
+	echo 'Пожалуйста, введите корректный телефон.';
 	die();
 }
 
