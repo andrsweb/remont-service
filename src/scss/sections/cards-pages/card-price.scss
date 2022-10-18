@@ -11,37 +11,38 @@
 	}
 
 	.cards-table {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		margin-bottom: 50px;
 		background: $bg-cards;
 		padding: 10px;
 		border-radius: 5px;
-		margin-bottom: 50px;
 
 		@media all and (min-width: $m) {
             padding: 20px;
         }
 
 		@media all and (min-width: $md) {
-            padding: 40px;
+            padding: 30px;
         }
 	}
 
-	.card-table {
-		margin-right: 10%;
-
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-
-	.row-name {
+	.col-name {
 		font-family: $ff-col;
 		font-size: 12px;
 		font-weight: $fw-medium;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 		color: $orange;
+
+		&:first-child {
+			width: 40%;
+		}
+
+		&:nth-child(2) {
+			width: 30%;
+		}
+
+		&:last-child {
+			width: 30%;
+		}
 
 		@media all and (min-width: $m) {
             font-size: 15px;
@@ -53,16 +54,39 @@
 
 	}
 
+	.row-title {
+		display: flex;
+	}
+
 	.row {
-		max-width: 300px;
+		display: flex;
+		flex-wrap: wrap;
+
+		&:nth-child( 2n + 1) {
+			color: $accent;
+		}
 	}
 
 	.col {
+		display: flex;
 		font-family: $ff-col;
 		font-size: 10px;
 		font-weight: $fw-regular;
 		margin-bottom: 20px;
-		min-height: 60px;
+		padding-right: 10px;
+
+		&:first-child {
+			width: 40%;
+		}
+
+		&:nth-child(2) {
+			width: 30%;
+		}
+
+		&:last-child {
+			width: 30%;
+			padding-right: 0;
+		}
 
 		@media all and (min-width: $m) {
             font-size: 12px;
@@ -71,14 +95,6 @@
 		@media all and (min-width: $md) {
             font-size: 15px;
         }
-
-		&:nth-child( 2n + 1) {
-			color: $accent;
-		}
-
-		&:last-child {
-			margin-bottom: 0;
-		}
 	}
 
 	.card-price.form {
