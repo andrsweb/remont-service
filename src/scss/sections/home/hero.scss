@@ -29,20 +29,28 @@
     }
 
     &-subtitle {
-        font-family: $ff-pom;
-        font-weight: $fw-regular;
-        font-size: 19px;
+        font-family: $ff-mont;
+        font-weight: $fw-bold;
+        font-size: 14px;
         line-height: $lh;
         text-transform: uppercase;
         margin-bottom: 18px;
+
+        @media all and (min-width: $m) {
+            font-size: 16px;
+        }
     }
 
     &-text {
-        font-family: $ff-pom;
+        font-family: $ff-mont;
         font-weight: $fw-regular;
-        font-size: 24px;
+        font-size: 14px;
         line-height: $lh;
         margin-bottom: 22px;
+
+        @media all and (min-width: $m) {
+            font-size: 16px;
+        }
     }
 
     &-button {

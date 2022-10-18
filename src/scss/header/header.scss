@@ -18,8 +18,25 @@
 		max-width: 1140px;
 	}
 
+	.menu-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
 	&-wrapper {
 		padding: 7px 0;
+	}
+
+	&-box {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media all and (min-width: $md) {
+			width: 5%;
+		}
 	}
 
 	&-inner {
@@ -52,19 +69,26 @@
 			opacity: 1;
 			transition: opacity ease 1s;
 			transform: translateX( 0 );
+
+			.header-logo {
+				margin: 0 auto;
+			}
+
+			.header-logo.inner-logo {
+				display: flex;
+			}
 		}
 	}
 
 	&-logo {
-		width: 100%;
+		width: auto;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		transition: opacity ease $tr;
 
-		@media all and (min-width: $md) {
-			width: 5%;
-			justify-content: flex-start;
+		&.inner-logo {
+			display: none;
 		}
 
 		&:hover {
@@ -72,7 +96,11 @@
 		}
 
 		img {
-			width: 50px;
+			width: 35px;
+
+			@media all and (min-width: $md) {
+				width: 50px;
+			}
 		}
 	}
 
@@ -94,10 +122,10 @@
 	&-menu-item {
 		display: flex;
 		justify-content: center;
-		font-family: $ff-col;
-		font-weight: $fw-regular;
+		font-family: $ff-mont;
+		font-weight: $fw-bold;
 		text-transform: uppercase;
-		font-size: $fs-sm;
+		font-size: 15px;
 		line-height: 1.5;
 		margin-bottom: 40px;
 		color: $accent;
@@ -105,11 +133,13 @@
 		@media all and (min-width: $md) {
 			margin-bottom: 0;
 			margin-right: 20px;
-			color: $light;
+			color: $peach;
+			font-size: 13px;
 		}
 
 		@media all and (min-width: $lg) {
 			margin-right: 60px;
+			font-size: 15px;
 		}
 
 		&:last-child {
@@ -136,8 +166,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-family: $ff-col;
-		font-weight: $fw-regular;
+		font-family: $ff-mont;
+		font-weight: $fw-bold;
 		text-transform: uppercase;
 		font-size: 15px;
 		line-height: 1.2;

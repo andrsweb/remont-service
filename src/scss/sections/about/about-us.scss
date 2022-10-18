@@ -7,17 +7,23 @@
     }
 
     .breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        cursor: pointer;
         margin-bottom: 40px;
     }
 
     .main-breadcrumb, .current-breadcrumb, .slash{
-        cursor: pointer;
-        font-family: $ff-col;
-        font-size: 14px;
+        font-family: $ff-mont;
+        font-size: 10px;
         font-weight: $fw-regular;
         color: $main;
         transition: color ease $tr,
             text-decoration ease $tr;
+
+            @media all and (min-width: $md) {
+                font-size: 15px;
+            }
     }
 
     .current-breadcrumb, .main-breadcrumb {
@@ -32,7 +38,7 @@
     }
 
     .slash {
-        cursor: default;
+        margin: 0 5px;
     }
 
     &-wrapper {
@@ -63,6 +69,14 @@
         font-size: 15px;
         color: $main;
         margin-bottom: 30px;
+
+        a {
+            color: blue;
+
+            &:hover {
+                color: orange;
+            }
+        };
 
         @media all and (min-width: $lg) {
             font-size: 19px;

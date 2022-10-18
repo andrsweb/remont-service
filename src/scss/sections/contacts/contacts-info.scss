@@ -28,13 +28,13 @@
     }
 
     &-text {
-        font-family: $ff-pom;
+        font-family: $ff-mont;
         font-weight: $fw-bold;
         font-size: 15px;
         min-height: 100px;
 
-        @media all and (min-width: $md) {
-            font-size: 20px;
+        @media all and (min-width: $xl) {
+            font-size: 18px;
         }
     }
 
@@ -44,7 +44,44 @@
         align-items: center;
         margin-bottom: 20px;
     }
+
+    .breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+
+    .main-breadcrumb, .current-breadcrumb, .slash{
+        font-family: $ff-mont;
+        font-size: 10px;
+        font-weight: $fw-regular;
+        color: $main;
+        transition: color ease $tr,
+            text-decoration ease $tr;
+
+            @media all and (min-width: $md) {
+                font-size: 15px;
+            }
+    }
+
+    .current-breadcrumb, .main-breadcrumb {
+        &:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+
+    .main-breadcrumb {
+        text-decoration: underline;
+    }
+
+    .slash {
+        margin: 0 5px;
+    }
+
+    .sales {
+        background: $light;
+    }
 }
-.sales {
-    background: $light;
-}
+

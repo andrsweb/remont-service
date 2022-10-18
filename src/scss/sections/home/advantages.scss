@@ -57,8 +57,8 @@
 	}
 
 	&-item-title {
-		font-family: $ff-col;
-		font-weight: $fw-medium;
+		font-family: $ff-mont;
+		font-weight: $fw-bold;
 		line-height: $lh-title;
 		font-size: 20px;
 		margin-bottom: 20px;
@@ -71,8 +71,8 @@
 	}
 
 	&-item-text {
-		font-family: $ff-col;
-		font-weight: $fw-medium;
+		font-family: $ff-mont;
+		font-weight: $fw-regular;
 		line-height: $lh-title;
 		font-size: 15px;
 		color: $main;

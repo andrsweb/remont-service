@@ -30,7 +30,7 @@
 			opacity: 0.8;
 
 			.guarantees-text {
-				color: $accent;
+				color: $orange;
 				text-shadow: 39px 20px 8px rgba(151, 150, 150, 1);
 			}
 		}
@@ -52,7 +52,7 @@
 	&-text {
 		display: flex;
 		align-items: center;
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-weight: $fw-regular;
 		font-size: $fs-sm;
 		min-height: 50px;
@@ -60,7 +60,7 @@
 		color: $main;
 		text-shadow: 19px 20px 8px rgba(151, 150, 150, 1);
 		transition: color ease $tr,
-				text-shadow ease $tr;
+				text-shadow ease 1s;
 		padding-top: 40px;
 		margin-top: 20px;
 
