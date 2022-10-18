@@ -15,9 +15,17 @@
 		flex-direction: row;
 		justify-content: center;
 		background: $bg-cards;
-		padding: 40px;
+		padding: 10px;
 		border-radius: 5px;
 		margin-bottom: 50px;
+
+		@media all and (min-width: $m) {
+            padding: 20px;
+        }
+
+		@media all and (min-width: $md) {
+            padding: 40px;
+        }
 	}
 
 	.card-table {
@@ -30,10 +38,19 @@
 
 	.row-name {
 		font-family: $ff-col;
-		font-size: 19px; //
+		font-size: 12px;
 		font-weight: $fw-medium;
 		margin-bottom: 40px;
 		color: $orange;
+
+		@media all and (min-width: $m) {
+            font-size: 15px;
+        }
+
+		@media all and (min-width: $md) {
+            font-size: 19px;
+        }
+
 	}
 
 	.row {
@@ -42,10 +59,18 @@
 
 	.col {
 		font-family: $ff-col;
-		font-size: 15px;
+		font-size: 10px;
 		font-weight: $fw-regular;
 		margin-bottom: 20px;
 		min-height: 60px;
+
+		@media all and (min-width: $m) {
+            font-size: 12px;
+        }
+
+		@media all and (min-width: $md) {
+            font-size: 15px;
+        }
 
 		&:nth-child( 2n + 1) {
 			color: $accent;
