@@ -1,6 +1,11 @@
 .card-price {
 	padding: 50px 0 0;
 	background: $light;
+
+	@media all and (min-width: $md) {
+		padding: 50px 0;
+	}
+
     .container {
 		max-width: 1140px;
     }
