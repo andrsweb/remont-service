@@ -33,15 +33,15 @@
 		color: $orange;
 
 		&:first-child {
-			width: 40%;
+			width: 50%;
 		}
 
 		&:nth-child(2) {
-			width: 30%;
+			width: 25%;
 		}
 
 		&:last-child {
-			width: 30%;
+			width: 25%;
 		}
 
 		@media all and (min-width: $m) {
@@ -51,7 +51,6 @@
 		@media all and (min-width: $md) {
             font-size: 19px;
         }
-
 	}
 
 	.row-title {
@@ -76,15 +75,15 @@
 		padding-right: 10px;
 
 		&:first-child {
-			width: 40%;
+			width: 50%;
 		}
 
 		&:nth-child(2) {
-			width: 30%;
+			width: 25%;
 		}
 
 		&:last-child {
-			width: 30%;
+			width: 25%;
 			padding-right: 0;
 		}
 
