@@ -83,8 +83,13 @@
         }
     }
 
+    &-button-wrapp {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
     .button.cards-button {
         max-width: 190px;
-        margin: 0 auto;
     }
 }
