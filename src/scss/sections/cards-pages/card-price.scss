@@ -1,62 +1,110 @@
-.contacts-form {
-	padding: 50px 0;
+.card-price {
+	padding: 50px 0 0;
 	background: $light;
 
-	.container {
-		max-width: 1140px;
+	@media all and (min-width: $md) {
+		padding: 50px 0;
 	}
+
+    .container {
+		max-width: 1140px;
+    }
 
 	&-wrapper {
 		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: center;
-
-		@media all and (min-width: $lg) {
-			justify-content: space-between;
-		}
+		flex-direction: column;
 	}
 
-	.contacts {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		text-align: center;
-		margin-bottom: 30px;
+	.cards-table {
+		margin-bottom: 50px;
+		background: $bg-cards;
+		padding: 10px;
+		border-radius: 5px;
+
+		@media all and (min-width: $m) {
+            padding: 20px;
+        }
 
 		@media all and (min-width: $md) {
-			width: 100%;
-		}
-
-		@media all and (min-width: $lg) {
-			width: 25%;
-			margin-bottom: 0;
-			text-align: left;
-		}
+            padding: 30px;
+        }
 	}
 
-	.contacts-phone {
+	.col-name {
 		font-family: $ff-col;
-		font-weight: $fw-bold;
-		font-size: 15px;
-		margin-bottom: 10px;
-	}
-
-	.contacts-location {
-		font-family: $ff-col;
-		font-weight: $fw-regular;
 		font-size: 12px;
-		margin-bottom: 10px;
+		font-weight: $fw-medium;
+		margin-bottom: 30px;
+		color: $orange;
+
+		&:first-child {
+			width: 50%;
+		}
+
+		&:nth-child(2) {
+			width: 25%;
+		}
+
+		&:last-child {
+			width: 25%;
+		}
+
+		@media all and (min-width: $m) {
+            font-size: 15px;
+        }
+
+		@media all and (min-width: $md) {
+            font-size: 19px;
+        }
 	}
 
-	.contacts-address {
-		font-family: $ff-col;
-		font-weight: $fw-bold;
-		font-size: 15px;
-	}
-
-	.form {
+	.row-title {
 		display: flex;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+
+		&:nth-child( 2n + 1) {
+			color: $accent;
+		}
+	}
+
+	.col {
+		display: flex;
+		font-family: $ff-col;
+		font-size: 10px;
+		font-weight: $fw-regular;
+		margin-bottom: 20px;
+		padding-right: 10px;
+
+		&:first-child {
+			width: 50%;
+		}
+
+		&:nth-child(2) {
+			width: 25%;
+		}
+
+		&:last-child {
+			width: 25%;
+			padding-right: 0;
+		}
+
+		@media all and (min-width: $m) {
+            font-size: 12px;
+        }
+
+		@media all and (min-width: $md) {
+            font-size: 15px;
+        }
+	}
+
+	.card-price.form {
+		display: flex;
+		width: 100%;
+		justify-content: center;
 
 		@media all and (min-width: $lg) {
 			width: 75%;
@@ -70,6 +118,7 @@
 		border: 0;
 		padding: 0;
 		max-width: 650px;
+		margin: 0 auto;
 	}
 
 	.fieldset-wrapper {
@@ -148,6 +197,7 @@
 	.checkbox {
 		width: 20px;
 		margin: 0 10px 0 0;
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	.checkbox-items {
@@ -168,42 +218,15 @@
 		font-weight: $fw-bold;
 		font-size: 12px;
 	}
-}
 
-.button.form-button {
-	background: $accent;
+	.button.form-button {
+		background: $accent;
 
-	&:hover {
-		background: $peach;
-		border: 1px solid $peach;
+		&:hover {
+			background: $peach;
+			border: 1px solid $peach;
+		}
 	}
 }
 
-.breadcrumbs {
-	margin-bottom: 40px;
-}
 
-.main-breadcrumb, .current-breadcrumb, .slash{
-	font-family: $ff-col;
-	font-size: 14px;
-	font-weight: $fw-regular;
-	color: $main;
-	transition: color ease $tr,
-		text-decoration ease $tr;
-	cursor: pointer;
-}
-
-.current-breadcrumb, .main-breadcrumb {
-	&:hover {
-		color: $orange;
-		text-decoration: none;
-	}
-}
-
-.main-breadcrumb {
-	text-decoration: underline;
-}
-
-.slash {
-	cursor: default;
-}
