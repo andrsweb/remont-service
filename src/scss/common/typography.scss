@@ -12,12 +12,12 @@ h6, .h6 {
 h1, .h1 {
 	font-family: $ff-mont;
 	font-weight: $fw-bold;
-	font-size: 35px;
+	font-size: 25px;
 	line-height: 1;
 	margin-bottom: 12px;
 
 	@media all and (min-width: $md) {
-		font-size: 40px;
+		font-size: 35px;
 	}
 
 	@media all and (min-width: $lg) {
@@ -37,7 +37,7 @@ h1, .h1 {
 h2, .h2 {
 	font-family: $ff-mont;
 	font-weight: $fw-bold;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: $lh-title;
 	text-align: center;
 	margin-bottom: 30px;

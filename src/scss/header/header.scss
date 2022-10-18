@@ -123,9 +123,9 @@
 		display: flex;
 		justify-content: center;
 		font-family: $ff-mont;
-		font-weight: $fw-regular;
+		font-weight: $fw-bold;
 		text-transform: uppercase;
-		font-size: $fs-sm;
+		font-size: 15px;
 		line-height: 1.5;
 		margin-bottom: 40px;
 		color: $accent;
@@ -134,10 +134,12 @@
 			margin-bottom: 0;
 			margin-right: 20px;
 			color: $peach;
+			font-size: 13px;
 		}
 
 		@media all and (min-width: $lg) {
 			margin-right: 60px;
+			font-size: 15px;
 		}
 
 		&:last-child {
@@ -165,7 +167,7 @@
 		flex-direction: column;
 		align-items: center;
 		font-family: $ff-mont;
-		font-weight: $fw-regular;
+		font-weight: $fw-bold;
 		text-transform: uppercase;
 		font-size: 15px;
 		line-height: 1.2;

@@ -69,7 +69,7 @@
 		@media all and (min-width: $m) {
 			flex-direction: row;
 			justify-content: flex-end;
-			width: 48%;
+			width: 53%;
 			margin: 0;
 		}
 
@@ -81,6 +81,7 @@
 
 	.header-menu-item {
 		color: $white;
+		font-weight: $fw-regular;
 		margin-bottom: 20px;
 
 		@media all and (min-width: $m) {
@@ -106,7 +107,7 @@
 		flex-direction: row;
 		@media all and (min-width: $m) {
 			justify-content: flex-end;
-			width: 42%;
+			width: 37%;
 		}
 
 		@media all and (min-width: $md) {
@@ -115,6 +116,7 @@
 	}
 
 	.header-phone-number {
+		font-weight: $fw-regular;
 		flex-direction: row;
 		align-items: center;
 		color: $light;
@@ -136,7 +138,7 @@
 		font-family: $ff-mont;
 		font-weight: $fw-regular;
 		line-height: $lh;
-		font-size: $fs-md;
+		font-size: 15px;
 		color: $white;
 		text-align: center;
 		margin-bottom: 30px;

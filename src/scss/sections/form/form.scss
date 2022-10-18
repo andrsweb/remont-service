@@ -126,6 +126,7 @@
 			transition: ease $tr;
 
 			&:hover {
+				color: $orange;
 				opacity: $op;
 			}
 		}
