@@ -91,20 +91,15 @@
 			display: none;
 		}
 
-		// @media all and (min-width: $md) {
-		// 	width: 5%;
-		// 	justify-content: flex-start;
-		// }
-
 		&:hover {
 			opacity: 0.5;
 		}
 
 		img {
-			width: 35px; //50
+			width: 35px;
 
 			@media all and (min-width: $md) {
-				width: 45px;
+				width: 50px;
 			}
 		}
 	}
@@ -127,7 +122,7 @@
 	&-menu-item {
 		display: flex;
 		justify-content: center;
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-weight: $fw-regular;
 		text-transform: uppercase;
 		font-size: $fs-sm;
@@ -169,7 +164,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-weight: $fw-regular;
 		text-transform: uppercase;
 		font-size: 15px;

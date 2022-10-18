@@ -36,21 +36,21 @@
 	}
 
 	.contacts-phone {
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-weight: $fw-bold;
 		font-size: 15px;
 		margin-bottom: 10px;
 	}
 
 	.contacts-location {
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-weight: $fw-regular;
 		font-size: 12px;
 		margin-bottom: 10px;
 	}
 
 	.contacts-address {
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-weight: $fw-bold;
 		font-size: 15px;
 	}
@@ -103,7 +103,7 @@
 	}
 
 	textarea {
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-size: 14px;
 		padding: 5px 0 0 10px;
 		resize: none;
@@ -120,7 +120,7 @@
 	}
 
 	input {
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-size: 14px;
 		height: 40px;
 		margin-bottom: 10px;
@@ -184,7 +184,7 @@
 }
 
 .main-breadcrumb, .current-breadcrumb, .slash{
-	font-family: $ff-col;
+	font-family: $ff-mont;
 	font-size: 14px;
 	font-weight: $fw-regular;
 	color: $main;

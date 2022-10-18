@@ -1,52 +1,44 @@
+/* montserrat-300 - latin_cyrillic */
 @font-face {
-    font-family: 'Pomidorko';
-    src: url('../fonts/Pomidorko.eot');
-    src: url('../fonts/Pomidorko.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Pomidorko.woff2') format('woff2'),
-        url('../fonts/Pomidorko.woff') format('woff'),
-        url('../fonts/Pomidorko.ttf') format('truetype'),
-        url('../fonts/Pomidorko.svg#Pomidorko') format('svg');
-    font-weight: normal;
+    font-family: 'Montserrat';
     font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserat/montserrat-v25-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-300.svg#Montserrat') format('svg'); /* Legacy iOS */
     font-display: swap;
 }
 
+  /* montserrat-regular - latin_cyrillic */
 @font-face {
-    font-family: 'Colus';
-    src: url('../fonts/Colus-Regular.eot');
-    src: url('../fonts/Colus-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Colus-Regular.woff2') format('woff2'),
-        url('../fonts/Colus-Regular.woff') format('woff'),
-        url('../fonts/Colus-Regular.ttf') format('truetype'),
-        url('../fonts/Colus-Regular.svg#Colus-Regular') format('svg');
-    font-weight: normal;
+    font-family: 'Montserrat';
     font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserat/montserrat-v25-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
     font-display: swap;
 }
 
+  /* montserrat-700 - latin_cyrillic */
 @font-face {
-    font-family: 'Gora Free';
-    src: url('../fonts/GoraFree-Regular.eot');
-    src: url('../fonts/GoraFree-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/GoraFree-Regular.woff2') format('woff2'),
-        url('../fonts/GoraFree-Regular.woff') format('woff'),
-        url('../fonts/GoraFree-Regular.ttf') format('truetype'),
-        url('../fonts/GoraFree-Regular.svg#GoraFree-Regular') format('svg');
-    font-weight: normal;
+    font-family: 'Montserrat';
     font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserat/montserrat-v25-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserat/montserrat-v25-latin_cyrillic-700.svg#Montserrat') format('svg'); /* Legacy iOS */
     font-display: swap;
 }
-
-@font-face {
-    font-family: 'Mont ExtraLight DEMO';
-    src: url('../fonts/Mont-ExtraLightDEMO.eot');
-    src: url('../fonts/Mont-ExtraLightDEMO.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Mont-ExtraLightDEMO.woff2') format('woff2'),
-        url('../fonts/Mont-ExtraLightDEMO.woff') format('woff'),
-        url('../fonts/Mont-ExtraLightDEMO.ttf') format('truetype'),
-        url('../fonts/Mont-ExtraLightDEMO.svg#Mont-ExtraLightDEMO') format('svg');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-

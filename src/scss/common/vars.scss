@@ -16,10 +16,7 @@ $container-xl: 1200px;
 $container-padding: 24px;
 
 // Font families.
-$ff-gora	: 'Gora Free', sans-serif;
-$ff-col	    : 'Colus', sans-serif;
-$ff-pom 	: 'Pomidorko', sans-serif;
-$ff-mont 	: 'Mont ExtraLight DEMO', sans-serif;
+$ff-mont : 'Montserrat', sans-serif;
 
 // Font sizes.
 $fs-xs	: 11px;
@@ -29,10 +26,9 @@ $fs-lg	: 36px;
 $fs-xl	: 48px;
 
 // Font weights.
+$fw-light	: 300;
 $fw-regular	: 400;
-$fw-medium	: 500;
-$fw-semibold: 700;
-$fw-bold	: 900;
+$fw-bold: 700;
 
 //line heights
 

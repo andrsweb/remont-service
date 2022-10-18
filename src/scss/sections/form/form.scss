@@ -35,7 +35,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: flex-start;
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-weight: $fw-bold;
 		font-size: 15px;
 		line-height: $lh;
@@ -46,14 +46,16 @@
 	}
 
 	fieldset {
-		font-family: $ff-col;
+		font-family: $ff-mont;
+		font-weight: $fw-regular;
 		display: flex;
 		flex-direction: column;
 		border: 0;
 	}
 
 	input {
-		font-family: $ff-col;
+		font-family: $ff-mont;
+		font-weight: $fw-regular;
 		font-size: 14px;
 		height: 38px;
 		width: 100%;
@@ -78,7 +80,8 @@
 	}
 
 	textarea {
-		font-family: $ff-col;
+		font-family: $ff-mont;
+		font-weight: $fw-regular;
 		font-size: 14px;
 		min-height: 100px;
 		resize: none;
@@ -115,6 +118,7 @@
 
 	label {
 		font-family: $ff-mont;
+		font-weight: $fw-light;
 		font-size: 12px;
 
 		a {

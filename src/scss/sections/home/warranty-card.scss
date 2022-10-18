@@ -34,8 +34,6 @@
 	}
 
 	h2 {
-		font-family: $ff-col;
-		font-weight: $fw-bold;
 		font-size: 28px;
 		color: $white;
 		line-height: $lh;
@@ -52,8 +50,8 @@
 	}
 
 	&-subtitle {
-		font-family: $ff-col;
-		font-weight: $fw-bold;
+		font-family: $ff-mont;
+		font-weight: $fw-regular;
 		font-size: 20px;
 		color: $white;
 		line-height: $lh-title;
@@ -70,8 +68,8 @@
 	}
 
 	&-text {
-		font-family: $ff-col;
-		font-weight: $fw-bold;
+		font-family: $ff-mont;
+		font-weight: $fw-regular;
 		font-size: $fs-sm;
 		color: $white;
 		line-height: $lh-title;

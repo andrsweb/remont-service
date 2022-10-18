@@ -12,7 +12,7 @@
     }
 
     .main-breadcrumb, .current-breadcrumb, .slash{
-        font-family: $ff-col;
+        font-family: $ff-mont;
         font-size: 14px;
         font-weight: $fw-regular;
         color: $main;
@@ -49,7 +49,7 @@
     &-text {
         font-family: $ff-mont;
         font-weight: $fw-bold;
-        font-size: 15px; //19
+        font-size: 15px;
         margin-bottom: 20px;
 
         @media all and (min-width: $lg) {

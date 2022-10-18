@@ -31,9 +31,9 @@
 	}
 
 	.col-name {
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-size: 12px;
-		font-weight: $fw-medium;
+		font-weight: $fw-regular;
 		margin-bottom: 30px;
 		color: $orange;
 
@@ -73,7 +73,7 @@
 
 	.col {
 		display: flex;
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-size: 10px;
 		font-weight: $fw-regular;
 		margin-bottom: 20px;
@@ -152,7 +152,7 @@
 	}
 
 	textarea {
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-size: 14px;
 		padding: 5px 0 0 10px;
 		resize: none;
@@ -169,7 +169,7 @@
 	}
 
 	input {
-		font-family: $ff-col;
+		font-family: $ff-mont;
 		font-size: 14px;
 		height: 40px;
 		margin-bottom: 10px;
