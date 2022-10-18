@@ -56,8 +56,10 @@
 		}
 	}
 
-	.form {
+	.card-price.form {
 		display: flex;
+		width: 100%;
+		justify-content: center;
 
 		@media all and (min-width: $lg) {
 			width: 75%;
@@ -71,6 +73,7 @@
 		border: 0;
 		padding: 0;
 		max-width: 650px;
+		margin: 0 auto;
 	}
 
 	.fieldset-wrapper {
