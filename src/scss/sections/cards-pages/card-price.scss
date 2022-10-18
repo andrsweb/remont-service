@@ -1,58 +1,55 @@
-.contacts-form {
+.card-price {
 	padding: 50px 0;
 	background: $light;
-
-	.container {
+    .container {
 		max-width: 1140px;
-	}
+    }
 
 	&-wrapper {
 		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: center;
-
-		@media all and (min-width: $lg) {
-			justify-content: space-between;
-		}
-	}
-
-	.contacts {
-		display: flex;
 		flex-direction: column;
-		width: 100%;
-		text-align: center;
-		margin-bottom: 30px;
+	}
 
-		@media all and (min-width: $md) {
-			width: 100%;
+	.cards-table {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		background: $bg-cards;
+		padding: 40px;
+		border-radius: 5px;
+		margin-bottom: 50px;
+	}
+
+	.card-table {
+		margin-right: 10%;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.row-name {
+		font-family: $ff-col;
+		font-size: 19px;
+		margin-bottom: 40px;
+		color: $orange;
+	}
+
+	.row {
+		max-width: 300px;
+	}
+
+	.col {
+		margin-bottom: 20px;
+		min-height: 60px;
+
+		&:nth-child( 2n + 1) {
+			color: $accent;
 		}
 
-		@media all and (min-width: $lg) {
-			width: 25%;
+		&:last-child {
 			margin-bottom: 0;
-			text-align: left;
 		}
-	}
-
-	.contacts-phone {
-		font-family: $ff-col;
-		font-weight: $fw-bold;
-		font-size: 15px;
-		margin-bottom: 10px;
-	}
-
-	.contacts-location {
-		font-family: $ff-col;
-		font-weight: $fw-regular;
-		font-size: 12px;
-		margin-bottom: 10px;
-	}
-
-	.contacts-address {
-		font-family: $ff-col;
-		font-weight: $fw-bold;
-		font-size: 15px;
 	}
 
 	.form {
@@ -168,42 +165,15 @@
 		font-weight: $fw-bold;
 		font-size: 12px;
 	}
-}
 
-.button.form-button {
-	background: $accent;
+	.button.form-button {
+		background: $accent;
 
-	&:hover {
-		background: $peach;
-		border: 1px solid $peach;
+		&:hover {
+			background: $peach;
+			border: 1px solid $peach;
+		}
 	}
 }
 
-.breadcrumbs {
-	margin-bottom: 40px;
-}
 
-.main-breadcrumb, .current-breadcrumb, .slash{
-	font-family: $ff-col;
-	font-size: 14px;
-	font-weight: $fw-regular;
-	color: $main;
-	transition: color ease $tr,
-		text-decoration ease $tr;
-	cursor: pointer;
-}
-
-.current-breadcrumb, .main-breadcrumb {
-	&:hover {
-		color: $orange;
-		text-decoration: none;
-	}
-}
-
-.main-breadcrumb {
-	text-decoration: underline;
-}
-
-.slash {
-	cursor: default;
-}
