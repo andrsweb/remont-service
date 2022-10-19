@@ -32,6 +32,7 @@
 	.header-logo {
 		margin-bottom: 20px;
 		width: 100%;
+		justify-content: center;
 
 		@media all and (min-width: $m) {
 			margin-bottom: 0;
@@ -41,7 +42,26 @@
 
 		@media all and (min-width: $md) {
 			flex-direction: row;
-			width: 16%;
+			width: 21%;
+		}
+
+		@media all and (min-width: $lg) {
+			width: 20%;
+		}
+	}
+
+	.header-logo-text {
+		font-size: 15px;
+		max-width: 150px;
+
+		@media all and (min-width: $md) {
+			font-size: 12px;
+			max-width: 120px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 15px;
+			max-width: 150px;
 		}
 	}
 
@@ -57,13 +77,13 @@
 
 		@media all and (min-width: $md) {
 			flex-direction: row;
-			width: 34%;
+			width: 32%;
 			margin: 0;
 			justify-content: center;
 		}
 
 		@media all and (min-width: $lg) {
-			width: 48%;
+			width: 40%;
 		}
 	}
 
@@ -78,11 +98,11 @@
 
 		@media all and (min-width: $md) {
 			margin-top: 0;
-			width: 50%;
+			width: 47%;
 		}
 
 		@media all and (min-width: $lg) {
-			width: 36%;
+			width: 40%;
 		}
 	}
 
@@ -120,10 +140,14 @@
 		flex-direction: row;
 		align-items: center;
 		color: $light;
-		font-size: 12px;
+		font-size: 15px;
 
 		@media all and (min-width: $lg) {
-			font-size: 14px;
+			font-size: 17px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
 		}
 
 		&:hover {
