@@ -15,7 +15,7 @@
 	}
 
 	.container {
-		max-width: $xxl;
+		max-width: 1140px;
 	}
 
 	.menu-wrapper {
@@ -111,6 +111,8 @@
 	&-logo-text {
 		font-size: 10px;
 		font-weight: $fw-bold;
+		max-width: 125px;
+			color: $peach;
 
 		@media all and (min-width: $lg) {
 			font-size: 12px;
@@ -120,18 +122,13 @@
 	&-logo {
 		width: auto;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: center;
 		transition: opacity ease $tr;
 
 		@media all and (min-width: $md) {
 			flex-direction: row;
 			width: 16%;
-		}
-
-		p {
-			max-width: 72px;
-			color: $peach;
 		}
 
 		&:hover {
@@ -228,7 +225,7 @@
 		font-family: $ff-mont;
 		font-weight: $fw-bold;
 		text-transform: uppercase;
-		font-size: 12px;
+		font-size: 15px;
 		line-height: 1.2;
 		color: $accent;
 		text-align: center;
@@ -239,7 +236,7 @@
 		}
 
 		@media all and (min-width: $lg) {
-			font-size: 14px;
+			font-size: 17px;
 		}
 
 		img {

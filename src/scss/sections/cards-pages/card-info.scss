@@ -67,12 +67,20 @@
     background: $light;
 }
 
+.hero-inform-wrapper {
+    padding: 40px 0;
+}
+
 .hero-inform-text {
-    padding: 20px 0;
     font-family: $ff-mont;
     font-weight: $fw-regular;
     font-size: 12px;
     color: $accent;
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     @media all and (min-width: $sm) {
         font-size: 14px;
@@ -82,3 +90,23 @@
         font-size: 16px;
     }
 }
+
+.hero-inform-item {
+    font-family: $ff-mont;
+    font-weight: $fw-bold;
+    font-size: 16px;
+
+    margin-bottom: 10px;
+
+    &::before {
+        display: inline-block;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: $orange;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}
+
+
