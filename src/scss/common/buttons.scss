@@ -2,10 +2,10 @@
 	position: relative;
 	display: inline-block;
 	width: 100%;
-	max-width: 150px;
+	max-width: 130px;
 	font-family: $ff-mont;
 	font-weight: $fw-bold	;
-	padding: 8px 15px;
+	padding: 8px 5px;
 	border-style: none;
 	border-radius: 5px;
 	color: $white;
@@ -16,6 +16,14 @@
 	border: 1px solid transparent;
 	cursor: pointer;
 	white-space: nowrap;
+
+	@media all and (min-width: $md) {
+		font-size: 10px;
+	}
+
+	@media all and (min-width: $lg) {
+		font-size: 12px;
+	}
 
 	&:hover {
 		background: $peach;

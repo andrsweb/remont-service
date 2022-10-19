@@ -14,6 +14,10 @@
 		}
 	}
 
+	.header-logo-box {
+		display: none;
+	}
+
 	.header-inner {
 		position: static;
 		height: auto;
@@ -25,63 +29,119 @@
 		transform: translateX( 0 );
 	}
 
-	.header-box {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: 30px;
-
-		@media all and (min-width: $m) {
-			justify-content: space-between;
-			width: 10%;
-			margin-bottom: 0;
-		}
-	}
-
-	.menu-wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between;
-
-		@media all and (min-width: $m) {
-			flex-direction: row;
-		}
-	}
-
-	.header-logo.footer-logo {
+	.header-logo {
 		margin-bottom: 20px;
+		width: 100%;
 
 		@media all and (min-width: $m) {
 			margin-bottom: 0;
 			justify-content: flex-start;
-			width: 10%;
+			width: 50%;
 		}
 
 		@media all and (min-width: $md) {
-			width: 5%;
-			justify-content: flex-start;
+			flex-direction: row;
+			width: 16%;
 		}
 	}
 
 	.header-menu {
+		width: 100%;
+
 		@media all and (min-width: $m) {
 			flex-direction: row;
 			justify-content: flex-end;
-			width: 53%;
+			width: 50%;
 			margin: 0;
 		}
 
 		@media all and (min-width: $md) {
-			width: 47.5%;
+			flex-direction: row;
+			width: 34%;
+			margin: 0;
 			justify-content: center;
 		}
+
+		@media all and (min-width: $lg) {
+			width: 48%;
+		}
+	}
+
+	.header-ui-wrapper {
+		width: 100%;
+		flex-direction: column;
+
+		@media all and (min-width: $m) {
+			flex-direction: row;
+			margin-top: 30px;
+		}
+
+		@media all and (min-width: $md) {
+			margin-top: 0;
+			width: 50%;
+		}
+
+		@media all and (min-width: $lg) {
+			width: 36%;
+		}
+	}
+
+	.header-worktime {
+		margin-top: 20px;
+		position: static;
+		transform: translateX( 0 );
+
+		@media all and (min-width: $m) {
+			position: absolute;
+			top: 140%;
+			left: 50%;
+			transform: translateX( -50%);
+			margin: 0;
+
+			@media all and (min-width: $lg) {
+				font-size: 12px;
+			}
+		}
+	}
+
+	.header-phone {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $m) {
+			margin-bottom: 0;
+
+		}
+	}
+
+	.header-phone-number {
+		font-weight: $fw-bold;
+		flex-direction: row;
+		align-items: center;
+		color: $light;
+		font-size: 12px;
+
+		@media all and (min-width: $lg) {
+			font-size: 14px;
+		}
+
+		&:hover {
+			color: $orange;
+		}
+
+		img {
+			margin: 0 10px 0 0;
+		}
+	}
+
+	.button.header-button {
+		display: inline-block;
 	}
 
 	.header-menu-item {
 		color: $white;
-		font-weight: $fw-regular;
+		font-weight: $fw-bold;
 		margin-bottom: 20px;
 
 		@media all and (min-width: $m) {
@@ -99,38 +159,6 @@
 
 		&:hover {
 			color: $orange;
-		}
-	}
-
-	.header-phone {
-		display: flex;
-		flex-direction: row;
-		@media all and (min-width: $m) {
-			justify-content: flex-end;
-			width: 37%;
-		}
-
-		@media all and (min-width: $md) {
-			width: 47.5%;
-		}
-	}
-
-	.header-phone-number {
-		font-weight: $fw-regular;
-		flex-direction: row;
-		align-items: center;
-		color: $light;
-
-		&:hover {
-			color: $orange;
-		}
-
-		@media all and (min-width: $md) {
-			font-size: 20px;
-		}
-
-		img {
-			margin: 0 10px 0 0;
 		}
 	}
 
