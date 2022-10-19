@@ -1,0 +1,23 @@
+.hero-inform {
+    padding: 20px 0;
+    background: $light;
+
+    .container {
+        max-width: 1140px;
+    }
+
+    .hero-inform-text {
+        font-family: $ff-mont;
+        font-weight: $fw-regular;
+        font-size: 12px;
+        color: $accent;
+
+        @media all and (min-width: $sm) {
+			font-size: 14px;
+		}
+
+        @media all and (min-width: $md) {
+			font-size: 16px;
+		}
+    }
+}
