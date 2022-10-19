@@ -1,0 +1,29 @@
+<form class="form">
+    <fieldset>
+        <div class="fieldset-wrapper">
+            <div class="input-wrapper">
+                <input name="person-name" type="text" placeholder="Имя" required>
+                <input name="person-phone" type="tel" autocomplete="off"  placeholder="Номер телефона" class="tel" required>
+            </div>
+            <div class="textarea-wrapper">
+                <textarea name="textarea" placeholder="Детали" required></textarea>
+            </div>
+        </div>
+        <div class="checkbox-wrapper">
+            <div class="checkbox-items">
+                <input name="checkbox" class="checkbox" type="checkbox" required="">
+                <label>
+                    Нажимая «Отправить заявку» я даю свое соглашение на
+                    <a href="../privacy.html">
+                        обработку персональных данных.
+                    </a>
+                </label>
+            </div>
+                <button class="button form-button" type="submit">
+                    Отправить заявку
+                </button>
+        </div>
+
+		<div class="form-response"></div>
+    </fieldset>
+</form>

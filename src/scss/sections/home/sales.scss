@@ -1,0 +1,90 @@
+.sales {
+	padding: 30px 0;
+	background: $peach;
+
+	.container {
+		max-width: 1140px;
+	}
+
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&-inner-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		min-height: 300px;
+		border-radius: 4px;
+		padding: 20px;
+
+		@media all and (min-width: $md) {
+			width: calc( 50% - 10px);
+			margin-right: 10px;
+		}
+	}
+
+	h2 {
+		font-family: $ff-mont;
+		font-weight: $fw-bold;
+		font-size: 30px;
+		text-transform: uppercase;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			text-align: left;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 40px;
+		}
+
+		span {
+			color: $orange;
+		}
+	}
+
+	&-desc {
+		font-family: $ff-mont;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-align: left;
+		margin-bottom: 40px;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			text-align: left;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
+	}
+
+	&-inner-right {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		min-height: 300px;
+		margin-left: 10px;
+		border-radius: 4px;
+
+		@media all and (min-width: $md) {
+			width: calc( 50% - 10px);
+			margin-left: 10px;
+		}
+	}
+
+	.header-button {
+		margin: 0 auto;
+
+		@media all and (min-width: $md) {
+			margin: 0;
+		}
+	}
+}

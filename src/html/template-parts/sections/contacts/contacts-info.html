@@ -1,0 +1,13 @@
+<section class="contacts-info">
+	<div class="container">
+		<div class="contacts-info-items">
+		@@loop( 'contacts-item.html', [
+			{"img": "img/contacts/courier.png", "text": "Для вашего удобства ежедневно работает бесплатный курьер!"},
+			{"img": "img/contacts/form.png", "text": "Оставить заказ вы можете удобным для вас способом – по телефону или через форму заявки на сайте"},
+			{"img": "img/contacts/chat.png", "text": "При поступлении заявки наши менеджеры незамедлительно свяжутся с вами и уточнят детали заказа"}
+		] )
+		</div>
+		@@include( '../home/information-text/inform-text.html')
+		@@include( '../home/sales/sales.html')
+	</div>
+</section>

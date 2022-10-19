@@ -4,6 +4,10 @@
 @import 'common/typography';
 @import 'common/grid';
 @import 'common/base';
+@import 'common/buttons';
+
+// Form
+@import 'sections/form/form';
 
 // Header styles.
 @import 'header/header';
@@ -13,3 +17,27 @@
 
 // Home page sections styles.
 @import 'sections/home/hero';
+@import 'sections/home/guarantees';
+@import 'sections/home/cards';
+@import 'sections/home/warranty-card';
+@import 'sections/home/advantages';
+@import 'sections/home/inform-text';
+@import 'sections/home/sales';
+
+//about page sections styles
+@import 'sections/about/about-us';
+
+//warranty  page sections styles
+@import 'sections/warranty/repair';
+@import 'sections/warranty/information';
+
+//privacy page sections styles
+@import 'sections/privacy/privacy-policy';
+
+//contacts page sections styles
+@import 'sections/contacts/contacts-form';
+@import 'sections/contacts/contacts-info';
+
+//cards page sections styles
+@import 'sections/cards-pages/card-info';
+@import 'sections/cards-pages/card-price';

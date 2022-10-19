@@ -1,0 +1,92 @@
+.warranty-card {
+	padding: 30px 0;
+	background: $peach;
+
+	.container {
+		max-width: 1140px;
+	}
+
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		background: $bg-warranty;
+		border-radius: 4px;
+		padding: 10px;
+
+		@media all and (min-width: $lg) {
+			padding: 25px;
+		}
+
+		@media all and (min-width: $xl) {
+			padding: 40px;
+		}
+	}
+
+	&-inner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
+	}
+
+	h2 {
+		color: $white;
+		line-height: $lh;
+		text-align: center;
+		margin-bottom: 10px;
+
+		@media all and (min-width: $m) {
+			font-size: 30px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 35px;
+		}
+	}
+
+	&-subtitle {
+		font-family: $ff-mont;
+		font-weight: $fw-regular;
+		font-size: 18px;
+		color: $white;
+		line-height: $lh-title;
+		text-align: center;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $m) {
+			font-size: 25px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 30px;
+		}
+	}
+
+	&-text {
+		font-family: $ff-mont;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		color: $white;
+		line-height: $lh-title;
+		text-align: left;
+		padding: 20px;
+
+		@media all and (min-width: $m) {
+			font-size: $fs-md;
+		}
+	}
+
+	&-image {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
+	}
+}

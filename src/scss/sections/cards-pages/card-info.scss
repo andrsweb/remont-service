@@ -1,0 +1,84 @@
+.card {
+    padding: 50px 0;
+    background: $peach;
+
+    .container {
+        max-width: 1140px;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        @media all and (min-width: $lg) {
+            width: 50%;
+            text-align: left;
+        }
+    }
+
+    &-subtitle {
+        font-family: $ff-mont;
+        font-weight: $fw-regular;
+        font-size: 19px;
+        line-height: $lh;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+    &-text {
+        font-family: $ff-mont;
+        font-weight: $fw-regular;
+        font-size: 24px;
+        line-height: $lh;
+        margin-bottom: 22px;
+    }
+
+    &-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+
+        @media all and (min-width: $lg) {
+            width: 50%;
+            margin-top: 0;
+        }
+
+        img {
+            max-width: 200px;
+            object-fit: cover;
+
+            @media all and (min-width: $md) {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+.sales {
+    background: $light;
+}
+
+.hero-inform-text {
+    padding: 20px 0;
+    font-family: $ff-mont;
+    font-weight: $fw-regular;
+    font-size: 12px;
+    color: $accent;
+
+    @media all and (min-width: $sm) {
+        font-size: 14px;
+    }
+
+    @media all and (min-width: $md) {
+        font-size: 16px;
+    }
+}

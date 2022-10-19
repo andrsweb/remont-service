@@ -1,0 +1,277 @@
+.header {
+	background: $accent;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 100;
+	padding: 10px 0;
+	transition: padding $tr,
+		box-shadow ease $tr;
+
+	&.scrolled {
+        box-shadow: 2px 2px 6px 4px #4e4d49;
+        padding: 7px 0;
+	}
+
+	.container {
+		max-width: $xxl;
+	}
+
+	.menu-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-wrapper {
+		padding: 7px 0;
+	}
+
+	&-box {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media all and (min-width: $md) {
+			width: 5%;
+		}
+	}
+
+	&-inner {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: $light;
+		width: 50%;
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		opacity: 0;
+		box-shadow: 5px 5px 10px 1px $accent;
+		transform: translateX( -2000px );
+
+		@media all and (min-width: $md) {
+			position: static;
+			transform: translateX( 0 );
+			height: auto;
+			opacity: 1;
+			width: 100%;
+			box-shadow: none;
+			background: none;
+			color: $white;
+		}
+
+		&.opened {
+			opacity: 1;
+			transition: opacity ease 1s;
+			transform: translateX( 0 );
+
+			.header-logo {
+				margin: 0 auto;
+			}
+
+			.header-logo-text {
+				color: $accent;
+			}
+
+			.header-ui-wrapper {
+				position: static;
+				width: 100%;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.header-phone {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+
+			.header-menu {
+				width: 100%;
+			}
+		}
+	}
+
+	&-logo-box {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media all and (min-width: $md) {
+			display: none;
+		}
+	}
+
+	&-logo-text {
+		font-size: 10px;
+		font-weight: $fw-bold;
+
+		@media all and (min-width: $lg) {
+			font-size: 12px;
+		}
+	}
+
+	&-logo {
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: opacity ease $tr;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+			width: 16%;
+		}
+
+		p {
+			max-width: 72px;
+			color: $peach;
+		}
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+		img {
+			width: 35px;
+
+			@media all and (min-width: $md) {
+				width: 50px;
+			}
+		}
+	}
+
+	&-menu {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 10px 0;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+			width: 34%;
+			margin: 0;
+		}
+
+		@media all and (min-width: $lg) {
+			width: 48%;
+		}
+
+	}
+
+	&-menu-item {
+		display: flex;
+		justify-content: center;
+		font-family: $ff-mont;
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+		font-size: 15px;
+		line-height: 1.5;
+		margin-bottom: 40px;
+		color: $accent;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 0;
+			margin-right: 20px;
+			color: $peach;
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-right: 30px;
+			font-size: 14px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+
+			@media all and (min-width: $md) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&-ui-wrapper {
+		position: relative;
+		width: 40%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media all and (min-width: $md) {
+			width: 50%;
+		}
+
+		@media all and (min-width: $lg) {
+			width: 36%;
+		}
+	}
+
+	&-phone {
+		display: flex;
+		justify-content: center;
+		margin-right: 20px;
+	}
+
+	&-phone-number {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: $ff-mont;
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+		font-size: 12px;
+		line-height: 1.2;
+		color: $accent;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			color: $light;
+			flex-direction: row;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 14px;
+		}
+
+		img {
+			margin-bottom: 20px;
+
+			@media all and (min-width: $md) {
+				margin: 0 5px 0 0;
+				font-size: 20px;
+			}
+		}
+	}
+
+	&-worktime {
+		position: absolute;
+		top: 110%;
+		left: 50%;
+		font-size: 11px;
+		font-weight: $fw-regular;
+		font-weight: $fw-bold;
+		transform: translateX( -50%);
+
+		@media all and (min-width: $lg) {
+			font-size: 12px;
+		}
+	}
+
+	.header-button-wrapper {
+		display: flex;
+		justify-content: center;
+
+		@media all and (min-width: $md) {
+			justify-content: flex-end;
+		}
+	}
+}

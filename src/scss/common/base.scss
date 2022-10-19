@@ -14,14 +14,15 @@ body {
 	min-width: 300px;
 	display: flex;
 	height: auto;
-	font-family: $ff;
+	font-family: $ff-mont;
+	font-weight: $fw-regular;
 	font-size: $fs-md;
-	line-height: $lh;
-	color: $black;
-	background-color: $white
+	color: $main;
+	background-color: $white;
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	height: auto
 }
@@ -32,6 +33,10 @@ ul {
 	list-style: none
 }
 
+p {
+	margin: 0;
+}
+
 .wrapper {
 	position: relative;
 	display: flex;
@@ -39,6 +44,7 @@ ul {
 	width: 100%;
 	min-height: 100vh;
 	overflow: hidden;
+	padding-top: 60px;
 
 	.footer {
 		margin-top: auto

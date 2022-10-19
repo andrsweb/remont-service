@@ -46,5 +46,8 @@
   },
   "browserslist": [
     "last 3 versions"
-  ]
+  ],
+  "dependencies": {
+    "body-scroll-lock": "^4.0.0-beta.0"
+  }
 }

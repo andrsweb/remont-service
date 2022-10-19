@@ -1,6 +1,7 @@
 // Grid.
 $xs	: 375px;
 $sm	: 480px;
+$m	: 576px;
 $md	: 768px;
 $lg	: 992px;
 $xl	: 1200px;
@@ -15,30 +16,42 @@ $container-xl: 1200px;
 $container-padding: 24px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff-mont : 'Montserrat', sans-serif;
 
 // Font sizes.
-$fs-xs	: 12px;
+$fs-xs	: 11px;
 $fs-sm	: 14px;
 $fs-md	: 16px;
-$fs-lg	: 18px;
-$fs-xl	: 20px;
+$fs-lg	: 36px;
+$fs-xl	: 48px;
 
 // Font weights.
 $fw-light	: 300;
 $fw-regular	: 400;
-$fw-medium	: 500;
-$fw-semibold: 600;
-$fw-bold	: 700;
+$fw-bold: 700;
 
-// Line heights.
-$lh			: 1.5;
-$lh-title	: 1.3;
+//line heights
+
+$lh          : 1;
+$lh-title    : 1.2;
+$lh-headings : 2;
 
 // Colors.
-$white	: #FFFFFF;
-$black	: #000000;
+$white	 : #FFFFFF;
+$accent  : #8D8D8B;
+$light   : #F6F6F4;
+$peach   : #F2EEE9;
+$span    : #ecbe25;
+$main    : #323232;
+$orange  : #ffc107;
+
+
+//backgrounds
+$bg-grey     : #eaeff3;
+$bg-dif      : linear-gradient(-56deg,#8a8787 0,#cccaca 100%);
+$bg-warranty : linear-gradient(-66deg,rgba(218, 218, 221, 0.87) 20%,rgba(134, 136, 139, 0.7) 70%);
+$bg-cards    : rgba(212, 209, 209, 0.096);
 
 // Others.
 $tr: 0.35s;
+$op: 0.75;

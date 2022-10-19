@@ -4,66 +4,70 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-	font-family: $ff-title;
 	font-weight: $fw-bold;
-	line-height: $lh-title;
-	margin: 0 0 1rem
+	padding: 0;
+	margin: 0;
 }
 
 h1, .h1 {
-	font-size: 32px;
+	font-family: $ff-mont;
+	font-weight: $fw-bold;
+	font-size: 25px;
+	line-height: 1;
+	margin-bottom: 12px;
+
+	@media all and (min-width: $md) {
+		font-size: 35px;
+	}
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		text-align: left;
+	}
+
+	@media all and (min-width: $xl) {
+		font-size: 48px;
+		line-height: $lh-title;
+	}
+
+	span {
+		color: $span;
 	}
 }
 
 h2, .h2 {
-	font-size: 24px;
+	font-family: $ff-mont;
+	font-weight: $fw-bold;
+	font-size: 20px;
+	line-height: $lh-title;
+	text-align: center;
+	margin-bottom: 30px;
+
+	@media all and (min-width: $m) {
+		font-size: 20px;
+	}
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		font-size: 25px;
 	}
 }
 
 h3, .h3 {
-	font-size: 30px
-}
-
-h4, .h4 {
-	font-size: $fs-xl;
-
-	@media all and (min-width: $lg) {
-		font-size: 24px
-	}
-}
-
-h5, .h5 {
-	font-size: $fs-xl
-}
-
-h6, .h6 {
-	font-size: $fs-lg
+	font-size: 18px;
+	line-height: $lh-headings;
 }
 
 a {
 	display: inline-block;
-	text-decoration: underline;
-	transition: color ease-out $tr;
+	text-decoration: none;
+	transition: color ease $tr;
 
 	&:hover {
-		text-decoration: none
+		color: $orange;
 	}
 }
 
 p {
+	font-size: 16px;
 	margin-top: 0;
-
-	&:last-of-type {
-		margin-bottom: 0
-	}
-}
-
-b, strong {
-	font-weight: $fw-bold
+	padding: 0;
 }
