@@ -32,6 +32,7 @@
 	.header-logo {
 		margin-bottom: 20px;
 		width: 100%;
+		justify-content: center;
 
 		@media all and (min-width: $m) {
 			margin-bottom: 0;

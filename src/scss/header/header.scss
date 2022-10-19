@@ -128,7 +128,7 @@
 
 		@media all and (min-width: $md) {
 			flex-direction: row;
-			width: 16%;
+			width: 18%;
 		}
 
 		&:hover {
@@ -154,12 +154,12 @@
 
 		@media all and (min-width: $md) {
 			flex-direction: row;
-			width: 34%;
+			width: 32%;
 			margin: 0;
 		}
 
 		@media all and (min-width: $lg) {
-			width: 48%;
+			width: 46%;
 		}
 
 	}
@@ -179,7 +179,7 @@
 			margin-bottom: 0;
 			margin-right: 20px;
 			color: $peach;
-			font-size: 12px;
+			font-size: 11px;
 		}
 
 		@media all and (min-width: $lg) {
