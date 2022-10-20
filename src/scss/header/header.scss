@@ -75,6 +75,7 @@
 			}
 
 			.header-logo-text {
+				font-size: 12px;
 				color: $accent;
 			}
 
@@ -115,7 +116,7 @@
 			color: $peach;
 
 			@media all and (min-width: $md) {
-				font-size: 12px;
+				font-size: 11px;
 				max-width: 120px;
 			}
 
@@ -134,7 +135,7 @@
 
 		@media all and (min-width: $md) {
 			flex-direction: row;
-			width: 21%;
+			width: 24%;
 		}
 
 		@media all and (min-width: $lg) {
@@ -164,7 +165,7 @@
 
 		@media all and (min-width: $md) {
 			flex-direction: row;
-			width: 32%;
+			width: 29%;
 			margin: 0;
 		}
 
